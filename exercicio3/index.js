@@ -60,7 +60,7 @@ function multiplicar(x, y) {
     return parseFloat(x.replace('^[-+]?\d*\.?\d*$')) * parseFloat(y.replace('^[-+]?\d*\.?\d*$'));
 }
 
-app.listen(52383)
+app.listen(process.env.PORT || 5000)
 
 module.exports = {
     somar: somar,
